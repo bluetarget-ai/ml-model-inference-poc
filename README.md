@@ -18,9 +18,9 @@ The following diagram illustrates the architecture of the solution.
 
 ## Requeriments
 
-- npm
-- ![CDK V2](https://www.npmjs.com/package/aws-cdk)
-- node@v16.x.x
+- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- [CDK V2](https://www.npmjs.com/package/aws-cdk)
+- [node@v16.x.x](https://nodejs.org/es/download/)
 
 ## Step to deploy
 
