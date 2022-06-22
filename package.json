@@ -1,6 +1,6 @@
 {
   "name": "serverless-multiple-ml-model",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "bin": {
     "main": "bin/main.js"
   },
@@ -12,13 +12,13 @@
   "devDependencies": {
     "@types/node": "10.17.27",
     "@types/prettier": "2.6.0",
+    "@types/aws-lambda": "^8.10.99",
     "aws-cdk": "2.27.0",
     "ts-jest": "^27.1.4",
     "ts-node": "^10.7.0",
     "typescript": "~3.9.7"
   },
   "dependencies": {
-    "@types/aws-lambda": "^8.10.99",
     "aws-cdk-lib": "2.27.0",
     "aws-lambda": "^1.0.7",
     "constructs": "^10.0.0"
