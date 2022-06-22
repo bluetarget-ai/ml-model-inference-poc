@@ -1,15 +1,39 @@
-# Welcome to your CDK TypeScript project
+# Serverless multiple machine learning inferece
 
-You should explore the contents of this project. It demonstrates a CDK app with an instance of a stack (`ServerlessMultipleMlModelStack`)
-which contains an Amazon SQS queue that is subscribed to an Amazon SNS topic.
+You can take advantage of Lambda benefits for machine learning model inference with large libraries or pre-trained models.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Architecture overview
 
-## Useful commands
+The following diagram illustrates the architecture of the solution.
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+![Architecture overview](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/4v1of2nlckfatsr8cuen.png)
+
+## AWS services
+
+- Amazon VPC ( requires for Amazon EFS )
+- Amazon S3
+- Amazon EFS
+- AWS Lambda
+- Amazon API Gateway
+
+## Requeriments
+
+- npm
+- ![CDK V2](https://www.npmjs.com/package/aws-cdk)
+- node@v16.x.x
+
+## Step to deploy
+
+- Configure your AWS CLI credentials. ![here](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
+- In `bin/main.ts` configure your AWS account number and AWS region
+- `npm i` install dependencies
+- `cdk bootstrap` for the first time
+- `cdk deploy ServerlessMultipleMLModelStack`
+
+## Useful commands [CDK V2]
+
+- `npm run build` compile typescript to js
+- `npm run watch` watch for changes and compile
+- `cdk deploy` deploy this stack to your default AWS account/region
+- `cdk diff` compare deployed stack with current state
+- `cdk synth` emits the synthesized CloudFormation template
