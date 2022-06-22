@@ -24,7 +24,7 @@ The following diagram illustrates the architecture of the solution.
 
 ## Step to deploy
 
-- Configure your AWS CLI credentials. ![here](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
+- Configure your AWS CLI credentials. [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
 - In `bin/main.ts` configure your AWS account number and AWS region
 - `npm i` install dependencies
 - `cdk bootstrap` for the first time
